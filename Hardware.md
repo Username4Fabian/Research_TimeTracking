@@ -18,6 +18,17 @@
 
 ### Coding Languages:
 
+The coding language is a backbone of this project and one of the most important parts to decide on. Possibilities are:
+
+* Python
+* C
+* C++
+* C# <br>
+
+For the "image recognition" part of the project, python would be one of the best choices due to its vast variety of libraries and frameworks, specifically in image processing and machine learning. The speed of image recognition on the Raspberry Pi will be tested later in the project, but for now, there are a few possibilities to improve it. This could be optimized libraries for the Pi, quantizing models, more efficient models, using hardware accelerators and multithreading. Depending on the cooling options, overclocking might be an option as well. <br>
+
+Overall, Python might be the right choice due to its strong support for OpenCV, machine learning libraries and the Raspberry Pi itself. Python has a large community working on projects, that might also be beneficial for this project.
+
 <br>
 
 ### Pictures / Videos:
