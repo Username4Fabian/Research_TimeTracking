@@ -39,7 +39,7 @@ When choosing a Raspberry Pi Version to work with, we need to take a few differe
 
 <br>
 
-##### Performance
+#### Performance
 
 The most important part of the overall performance is the CPU. In the following diagram the CPU performance is better with the newest model of the Pi, but due to product shortages and higher prices, the Pi 3B+ is still an option to keep in mind. The Pi 4B gets the best performance in most aspects such as CPU, GPU, RAM and USB Throughput.
 
@@ -49,7 +49,7 @@ In an image-recognition-experiment conducted by the website arrow.com, it was co
 
 <br>
 
-##### Specifications
+#### Specifications
 
 This table describes the difference between the two models in question. In some tests it shows a huge difference, in the parts most important for this project, they perform almost the same. The size and the layout are the same for both, so most shields can be reused, but cases will need to be changed due to the ethernet port bing moved and the full size HDMI port being replaced by two micro HDMI connectors. <br>
 The peak power consumption for the Pi3 is ~5.7 Watts and ~5.6 Watts for the Pi4 at their peak. <br>
@@ -70,7 +70,7 @@ The pricing shows the Raspberry Pi 3B as the overall cheapest model.
 
 <br>
 
-##### Conclusion
+#### Conclusion
 
 Overall can be said that the RaspberryPi3B is the better option for this project, due to a lower price range. While still a great product, the increased performance of the RaspberryPi4, does not justify the higher prices in the case of our specific project.
 
