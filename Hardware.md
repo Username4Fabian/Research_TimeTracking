@@ -52,7 +52,7 @@ In an image-recognition-experiment conducted by the website arrow.com, it was co
 #### Specifications
 
 This table describes the difference between the two models in question. In some tests it shows a huge difference, in the parts most important for this project, they perform almost the same. The size and the layout are the same for both, so most shields can be reused, but cases will need to be changed due to the ethernet port bing moved and the full size HDMI port being replaced by two micro HDMI connectors. <br>
-The peak power consumption for the Pi3 is ~5.7 Watts and ~5.6 Watts for the Pi4 at their peak. <br>
+The peak power consumption for the Pi3 is ~5.7 Watts and ~5.6 Watts for the Pi4. <br>
 
 <img src="Hardware_files/RaspberryPi3vs4.jpeg" alt="RaspberryPi3vs4" style="width: 40%;" />
 
@@ -92,7 +92,7 @@ Overall can be said that the RaspberryPi3B is the better option for this project
 
 In oder to calculate the power consumption, I am going to use the estimated values calculated earlier in the "specifications"
 
-> The peak power consumption for the Pi3 is ~5.7 Watts and ~5.6 Watts for the Pi4 at their peak.
+> The peak power consumption for the Pi3 is ~5.7 Watts and ~5.6 Watts for the Pi4.
 
 To compensate for potential losses and power fluctuations, the power consumption will be rounded up to 6 Watts. The final version of the time tracking system should be able to run for approximately 10 hours to ensure that an entire event can be tracked. The common standard for batteries of the required size is 12V, which is chosen due to its better accessibility and lower price. <br>
 
