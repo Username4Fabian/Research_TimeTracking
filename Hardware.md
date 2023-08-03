@@ -124,7 +124,61 @@ The best option here would be the **EMOS 12V 9Ah lead acid battery** with a weig
 
 <br>
 
-### Internal Time Synchronization:
+### Internal Time Synchronization: [^2]
+
+Achieving precise time synchronization between multiple Raspberry Pis can be challenging, but it is possible to get close to 10 milliseconds accuracy with careful configuration. One common approach is to use the Network Time Protocol (NTP) or the Precision Time Protocol (PTP). I'll outline the steps for both methods:
+
+1. Using Network Time Protocol (NTP):
+
+NTP is a widely-used protocol for synchronizing time over a network. The standard NTP implementation typically provides accuracy within a few milliseconds, but additional adjustments can be made to get closer to 10 milliseconds.
+
+a. Install NTP on all Raspberry Pis:
+
+```
+sudo apt-get update
+sudo apt-get install ntp
+```
+
+b. Configure the NTP settings:
+Edit the NTP configuration file `/etc/ntp.conf` and add NTP servers that provide precise time. You can use publicly available NTP servers, but for better accuracy, consider using local NTP servers if available.
+
+c. Enable NTP on all Raspberry Pis:
+
+```
+sudo systemctl enable ntp
+sudo systemctl start ntp
+```
+
+2. Using Precision Time Protocol (PTP):
+
+PTP is designed for high-precision time synchronization and can achieve sub-microsecond accuracy on well-configured networks.
+
+a. Install PTPd on all Raspberry Pis:
+
+```
+sudo apt-get update
+sudo apt-get install ptpd
+```
+
+b. Configure PTPd:
+Edit the PTPd configuration file `/etc/ptpd2.conf` and set the necessary options. Pay attention to the `slaveOnly` and `delay_mechanism` settings. The former ensures that PTP is only used to synchronize the system clock without disciplining the clock (recommended for better accuracy), and the latter should be set to `E2E` (End-to-End) for more precise time synchronization.
+
+c. Enable PTPd on all Raspberry Pis:
+
+```
+sudo systemctl enable ptpd
+sudo systemctl start ptpd
+```
+
+Additional considerations:
+
+1. Network Infrastructure: Ensure that your network infrastructure (routers, switches, cables) is capable of low-latency and low-jitter communication between the Raspberry Pis.
+2. Consistent Load: Try to maintain a consistent and low system load on the Raspberry Pis, as fluctuations in system load can impact time synchronization accuracy.
+3. Physical Clocks: Raspberry Pi's onboard clock is not highly accurate. Consider using external, precision time sources (e.g., GPS-based NTP servers or PTP grandmaster clocks) to further improve accuracy.
+4. Clock Disciplining: If you need even higher accuracy, you can investigate clock disciplining techniques like PPS (Pulse Per Second) synchronization, which uses external hardware to discipline the system clock.
+5. Monitor and Adjust: Continuously monitor the time synchronization accuracy and make adjustments as needed to improve the precision.
+
+Keep in mind that achieving sub-10 milliseconds synchronization between Raspberry Pis can be challenging due to various factors, and the ultimate precision will depend on your specific network and hardware setup.
 
 <br>
 
@@ -137,3 +191,5 @@ The best option here would be the **EMOS 12V 9Ah lead acid battery** with a weig
 * [https://chat.openai.com](https://chat.openai.comhttps:/)
 
 [^1]: The Model B and B+ perform almost the same in the, for this project, important aspects, so they are treated as an equal here.
+    
+[^2]: This part was created by OpenAIs ChatGPT 3.5 using this prompt: "how would I go on about a internal time synchronization of multiple raspberry pis. They need to be really precise. Close to 10 milliseconds"
