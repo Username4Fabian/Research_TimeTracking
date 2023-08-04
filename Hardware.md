@@ -89,13 +89,44 @@ Overall can be said that the RaspberryPi3B is the better option for this project
 
 ### Shields:
 
+There are a few things pre-existing shields would make a lot easier. Luckily enough, the Raspberry Pi community creates a vast variety of shields for almost any purpose. <br>
+
+This are some of the shields that could possibly be used in this project:
+
+
+| Purpose                                  | Description                                               | Price   | Link                                                                                                                                                                                                                                                 |
+| :----------------------------------------- | ----------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| SIM Card Module                          | EXVIST 4G LTE Industrial Mini PCIe auf USB Adapter USB    | 8.28€  | [Amazon.de](https://www.amazon.de/Industrial-SIM-Kartenslot-geeignet-Anwendungen-Raspberry/dp/B08B7ZRBRZ/ref=sr_1_3?keywords=raspberry%2Bpi%2Bsim%2Bcard&qid=1691175308&s=ce-de&sprefix=raspberry%2Bpi%2Bsim%2Celectronics%2C104&sr=1-3&th=1https:/) |
+| Multipurpose Communication with SIM Card | A7670E LTE Cat-1 HAT for Raspberry Pi, Multi Band Support | 38.62€ | [Amazon.de](https://www.amazon.de/Raspberry-Support-Enabling-Communication-Positioning/dp/B097K14K18/ref=sr_1_1?keywords=raspberry%2Bpi%2Bsim%2Bcard&qid=1691175308&s=ce-de&sprefix=raspberry%2Bpi%2Bsim%2Celectronics%2C104&sr=1-1&th=1)            |
+
+There are multiple solutions to choose from, especially for SIM Card readers. These will be important for the overall communication for this project. In case a custom shield is needed, it will be prototyped by hand and after in depth experimentation a more professional version will be created.
+
 <br>
 
 ### Housing / Water Resistance:
 
+There are multiple cases pre-made for the Raspberry Pi or just waterproof cases for electrical projects. Here it is important to note that the case not only has to fit the Pi and the basic electronic, but also the battery, which most likely will take a lot of space. <br>
+
+Due to this issue, a separate case for the battery might be an idea to go by.
+
+For the Pi itself a simple box like [this](https://www.amazon.com/-/de/dp/B0B87XSMVP/ref=d_pd_di_sccai_cn_sccl_4_1/138-4383230-3283737?pd_rd_w=1ZrI5&content-id=amzn1.sym.67c5ba31-9419-42ae-aa32-38239ca1805d&pf_rd_p=67c5ba31-9419-42ae-aa32-38239ca1805d&pf_rd_r=ME7FRVRXB2P7WGSEEK14&pd_rd_wg=ELz6d&pd_rd_r=0c6f9d65-af1a-45c0-9712-31c72b109893&pd_rd_i=B0B87XSMVP&th=1https:/) would work perfectly fine, but the issue of heat buildup and cooling will be a problem. The battery might be stored in something like [this](https://www.amazon.de/Knightsbridge-JB55-wetterfeste-Elektrobox-Außenbereich/dp/B08LQZK1Y5/ref=sr_1_7?__mk_de_DE=ÅMÅŽÕÑ&crid=N1TYGXHGGYZA&keywords=outdoor+kasten+wasserdicht&qid=1691176744&sprefix=outdoor+kasteb+wasserdicht%2Caps%2C97&sr=8-7https:/) and wired to the Pi separately. <br>
+
+In case water resistance is less of a priority, a custom 3D printed case will work as well. 
+
 <br>
 
 ### Cooling:
+
+Due to the need of a waterproof housing / case for the Pi, cooling will be difficult. Heat buildup will become a problem after a long time of image recognition. Without the need for water resistance, there would be multiple cooling units to decide from. For example:
+[DoubleFan Case RaspberryPi](https://www.amazon.com/-/de/dp/B07KYBCMJY/ref=sr_1_8?__mk_de_DE=ÅMÅŽÕÑ&crid=1BXMKJTH565YK&keywords=raspberry%2Bpi%2Bwaterproof%2Bcooling&qid=1691176858&sprefix=raspberry%2Bpi%2Bwaterproof%2Bcoolin%2Caps%2C208&sr=8-8&th=1https:/)
+
+[Geekworm 7mm Fan](https://www.amazon.com/-/de/dp/B07Z3Q417K/ref=sr_1_15?__mk_de_DE=ÅMÅŽÕÑ&crid=1BXMKJTH565YK&keywords=raspberry%2Bpi%2Bwaterproof%2Bcooling&qid=1691176858&sprefix=raspberry%2Bpi%2Bwaterproof%2Bcoolin%2Caps%2C208&sr=8-15&th=1https:/)
+
+A possible solution for this issue might be an external heat sink to stop heat buildup. Further experimentation to take note of the heat development during image recognition will be needed to decide if a fan is needed or the heatsink alone works as well.
+
+[Small heat sink for experimentation purpose](https://www.amazon.com/-/de/dp/B07ZLZRDXZ/ref=sr_1_4?__mk_de_DE=ÅMÅŽÕÑ&crid=GJK6GZ9JSVL4&keywords=raspberry+pi+big+heatsink&qid=1691177284&sprefix=raspberry+pi+big+heatsin%2Caps%2C205&sr=8-4)
+
+[Big heatsink to create a custom external solution](https://www.amazon.com/-/de/dp/B07X9L2SRP/ref=sr_1_3?__mk_de_DE=ÅMÅŽÕÑ&crid=2UVI3Y59UL1Y&keywords=big+heat+sink&qid=1691177358&sprefix=big+heat+sink+%2Caps%2C216&sr=8-3)
 
 <br>
 
