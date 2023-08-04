@@ -111,7 +111,7 @@ There are multiple solutions to choose from, especially for SIM Card readers. Th
 
 <br>
 
-### Housing / Water Resistance:
+### Cases / Water Resistance:
 
 There are multiple cases pre-made for the Raspberry Pi or just waterproof cases for electrical projects. Here it is important to note that the case not only has to fit the Pi and the basic electronic, but also the battery, which most likely will take a lot of space. <br>
 
@@ -125,7 +125,7 @@ In case water resistance is less of a priority, a custom 3D printed case will wo
 
 ### Cooling:
 
-Due to the need of a waterproof housing / case for the Pi, cooling will be difficult. Heat buildup will become a problem after a long time of image recognition. Without the need for water resistance, there would be multiple cooling units to decide from. For example:
+Due to the need of a waterproof housing / case for the Pi, cooling will be difficult. Heat buildup will become a problem after a long time of image recognition. Without the need for water resistance, there would be multiple cooling units to decide from. For example: <br>
 [DoubleFan Case RaspberryPi](https://www.amazon.com/-/de/dp/B07KYBCMJY/ref=sr_1_8?__mk_de_DE=ÅMÅŽÕÑ&crid=1BXMKJTH565YK&keywords=raspberry%2Bpi%2Bwaterproof%2Bcooling&qid=1691176858&sprefix=raspberry%2Bpi%2Bwaterproof%2Bcoolin%2Caps%2C208&sr=8-8&th=1https:/)
 
 [Geekworm 7mm Fan](https://www.amazon.com/-/de/dp/B07Z3Q417K/ref=sr_1_15?__mk_de_DE=ÅMÅŽÕÑ&crid=1BXMKJTH565YK&keywords=raspberry%2Bpi%2Bwaterproof%2Bcooling&qid=1691176858&sprefix=raspberry%2Bpi%2Bwaterproof%2Bcoolin%2Caps%2C208&sr=8-15&th=1https:/)
