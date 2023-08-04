@@ -33,9 +33,17 @@ Overall, Python might be the right choice due to its strong support for OpenCV, 
 
 ### Pictures / Videos:
 
+Additional experiments are required to generate findings in this area.
+
+***note to "Performance"***
+
 <br>
 
 ### Possible / Needed Resolutions:
+
+Additional experiments are required to generate findings in this area.
+
+***note to "Performance"***
 
 <br>
 
@@ -223,6 +231,8 @@ Additional considerations:
 Keep in mind that achieving sub-10 milliseconds synchronization between Raspberry Pis can be challenging due to various factors, and the ultimate precision will depend on your specific network and hardware setup.
 
 <br>
+
+***Please note that this research is still in progress, and ongoing investigations are being conducted to further explore and validate the findings.***
 
 ##### Sources:
 
